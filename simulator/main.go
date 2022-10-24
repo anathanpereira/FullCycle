@@ -18,7 +18,6 @@ func main() {
 
 	producer := kafka.NewKafkaProcucer()
 	kafka.Publish("ola", "readtest", producer)
-
 	for {
 		_ = 1
 	}
