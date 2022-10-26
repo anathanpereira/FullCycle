@@ -16,8 +16,9 @@ func init() {
 
 func main() {
 
-	producer := kafka.NewKafkaProcucer()
-	kafka.Publish("ola", "readtest", producer)
+	producer := kafka.NewKafkaProducer()
+	kafka.Publish("aaaaaaaaaaaaaaEU CONSEGUIIIIII", "readtest", producer)
+
 	for {
 		_ = 1
 	}
