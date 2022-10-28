@@ -11,7 +11,7 @@ import (
 
 type Route struct {
 	ID        string     `json:"routeId"`
-	ClientID  string     `json:"cleintId"`
+	ClientID  string     `json:"clientId"`
 	Positions []Position `json:"positon"`
 }
 
@@ -25,6 +25,10 @@ type PartialRoutePosition struct {
 	ClientID string    `json:"clientId"`
 	Position []float64 `json:"positon"`
 	Finished bool      `json:"finished"`
+}
+
+func NewRoute() *Route {
+	return &Route{}
 }
 
 func (route *Route) LoadPositions() error {

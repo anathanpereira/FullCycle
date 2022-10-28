@@ -34,5 +34,5 @@ services:
     command: >
       bash -c
         "sleep 5s &&
-        kafka-topics --create --topic=route.new-direction --if-not-exists --bootstrap-server=kafka:9092 &&
-        kafka-topics --create --topic=route.new-position --if-not-exists --bootstrap-server=kafka:9092"
+        kafka-topics --create --topic=route.new-direction --if-not-exists --bootstrap-server=kafka-kafka-1:9092 &&
+        kafka-topics --create --topic=route.new-position --if-not-exists --bootstrap-server=kafka-kafka-1:9092"
